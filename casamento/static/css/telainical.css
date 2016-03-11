@@ -1,0 +1,111 @@
+body{
+    background: url("../imagem/fundo.jpg");
+}
+
+.titulo{
+    padding: 15px;
+}
+
+p{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+h1{
+    margin: 0px;
+    text-align: center;
+    color: #FFC0CB;
+    font-family: 'Lobster';
+    font-size: 100px;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #888888;
+}
+
+.linhah1{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px #888888;
+    min-height: 10px;
+}
+
+li{
+    border: 0px solid;
+    border-radius: 10px;
+    list-style-type:none;
+    text-align: center;
+    display: inline-block;
+    padding: 1px 5px;
+}
+
+ul{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menutopo{
+    background: #FFFFFF;
+    border: 0px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #888888;
+    margin: 10px 0px;
+}
+
+.menutopo ul li{
+    margin: 5px 25px;
+    font-size: 18px;
+    color: #FFC0CB;
+    font-family: 'Lobster';
+}
+
+.menutopo ul li:hover{
+    background: #FFC0CB;
+    color: #FFFFFF;
+}
+.coracao{
+    text-align: center;
+}
+.colunat{
+    padding: 0px 10px;
+    margin: 25px 0px;
+}
+.caixa{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px #888888;
+    align-text: center;
+    min-height: 550px;
+    padding: 5px 15px;
+    border: 0px solid;
+    border-radius: 5px;
+}
+h2{
+    margin: 10px 0px;
+    color: #FFC0CB;
+    font-family: 'Lobster';
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.datacasa{
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+    color: #FFC0CB;
+    font-size: 80px;
+    font-family: 'Lobster';
+}
+
+.caidata{
+     padding: 50px 0px 0px 0px;
+    text-align: center;
+    color: #FFC0CB;
+    font-size: 50px;
+    font-family: 'Lobster';
+}
+
+.dias{
+    font-size:80px;
+}
+
+
+
+
+
