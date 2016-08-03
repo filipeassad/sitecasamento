@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Presentes</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/listapresentes.css' %}">
+</head>
+<body>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 titulo">
+        <h1>Lista de Presentes</h1>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row linhah1">
+    <div class="col-md-12"></div>
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 menutopo">
+        <ul>
+            <a href="{% url 'casamento.views.tela_inicial'%}">
+                <li>Tela Inicial</li>
+            </a>
+            <a href="{% url 'casamento.views.local_casamento'%}">
+                <li>Local</li>
+            </a>
+            <a href="{% url 'casamento.views.listapresentes'%}">
+                <li>Lista Presentes</li>
+            </a>
+            <a href="{% url 'casamento.views.presenca'%}">
+                <li>Cofirmação de Presença</li>
+            </a>
+            <a href="">
+                <li>Blog</li>
+            </a>
+            <a href="">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-1"></div>
+    <div class="col-md-10 caixa">
+        {% for pre in presentes %}
+        <div class="caixapresente">
+            <img src="{{pre.img.url}}" class="imgtxt" >
+            <div class="textos">
+                <p class="nomepresente">{{pre.nome}}</p>
+                <p class="descricao">{{pre.descricao}}</p>
+                <a href="{{pre.link}}" class="link" >Onde comprar?</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="col-md-1"></div>
+
+</div>
+
+</body>
+</html>

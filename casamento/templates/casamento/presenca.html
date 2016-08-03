@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/presenca.css' %}"/>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <title>Confirmação Convidado</title>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 titulo">
+        <h1>Confirmação de Convidado</h1>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row linhah1">
+    <div class="col-md-12"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 menutopo">
+        <ul>
+            <a href="{% url 'casamento.views.tela_inicial'%}">
+                <li>Tela Inicial</li>
+            </a>
+            <a href="{% url 'casamento.views.local_casamento'%}">
+                <li>Local</li>
+            </a>
+            <a href="{% url 'casamento.views.listapresentes'%}">
+                <li>Lista Presentes</li>
+            </a>
+            <a href="{% url 'casamento.views.presenca'%}">
+                <li>Cofirmação de Presença</li>
+            </a>
+            <a href="">
+                <li>Blog</li>
+            </a>
+            <a href="">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 caixa">
+        <form method="post">
+            <div class="caixaForm">
+
+                <div class="inputcaixa">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text">
+                </div>
+
+                <div class="checkcaixa">
+                    <input id="presenca" type="checkbox"><span>Vai estar presente</span><br>
+                </div>
+                <button type="submit">Enviar</button>
+
+            </div>
+
+        </form>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+</body>
+</html>

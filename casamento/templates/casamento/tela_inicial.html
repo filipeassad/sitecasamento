@@ -8,8 +8,20 @@
         <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/telainical.css' %}">
 
+        <script type="text/javascript" src="{% static 'scripts/moment.js' %}"></script>
+        <script type="text/javascript">
+            function calcularQtdHora(){
+                var data1 = moment( new Date(), "DD/MM/YYYY hh:mm");
+                var data2 = moment('11/10/2016 19:30', "DD/MM/YYYY hh:mm");
+                var diferenca = data2.diff(data1, 'days');
+                var paragrafo = document.getElementById("dias");
+                paragrafo.innerHTML = diferenca;
+                console.log(diferenca);
+            }
+         </script>
+
     </head>
-    <body>
+    <body onload="calcularQtdHora()">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 titulo">
@@ -26,10 +38,10 @@
             <div class="col-md-1"></div>
             <div class="col-md-10 menutopo">
                 <ul>
-                    <a href=""><li>Tela Inicial</li></a>
-                    <a href=""><li>Local</li></a>
-                    <a href=""><li>Lista Presentes</li></a>
-                    <a href=""><li>Cofirmação de Presença</li></a>
+                    <a href="{% url 'casamento.views.tela_inicial'%}"><li>Tela Inicial</li></a>
+                    <a href="{% url 'casamento.views.local_casamento'%}"><li>Local</li></a>
+                    <a href="{% url 'casamento.views.listapresentes'%}"><li>Lista Presentes</li></a>
+                    <a href="{% url 'casamento.views.presenca'%}"><li>Cofirmação de Presença</li></a>
                     <a href=""><li>Blog</li></a>
                     <a href=""><li>Contato</li></a>
                 </ul>
@@ -60,7 +72,7 @@
                     </div>
                     <div>
                         <div class="caidata">
-                            Faltam <div class="dias">250</div> dias!
+                            Faltam <div id="dias" class="dias"></div> dias!
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Casamento</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/local.css' %}">
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+            function initialize() {
+              var myLatLog = new google.maps.LatLng(-20.46713381,-54.63147461);
+              var mapProp = {
+                center:myLatLog,
+                zoom:18
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+              var marker = new google.maps.Marker({
+                    position: myLatLog,
+                    title:"Hello World!",
+                    map: map
+              });
+
+              var myLatLog2 = new google.maps.LatLng(-20.468491,-54.635905);
+              var mapProp2 = {
+                center:myLatLog2,
+                zoom:18
+              };
+              var map2 = new google.maps.Map(document.getElementById("BuffetMap"),mapProp2);
+
+              var marker2 = new google.maps.Marker({
+                    position: myLatLog2,
+                    title:"Hello World!",
+                    map: map2
+              });
+
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+</head>
+<body>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 titulo">
+        <h1>Local do Casamento</h1>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row linhah1">
+    <div class="col-md-12"></div>
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 menutopo">
+        <ul>
+            <a href="{% url 'casamento.views.tela_inicial'%}">
+                <li>Tela Inicial</li>
+            </a>
+            <a href="{% url 'casamento.views.local_casamento'%}">
+                <li>Local</li>
+            </a>
+            <a href="{% url 'casamento.views.listapresentes'%}">
+                <li>Lista Presentes</li>
+            </a>
+            <a href="{% url 'casamento.views.presenca'%}">
+                <li>Cofirmação de Presença</li>
+            </a>
+            <a href="">
+                <li>Blog</li>
+            </a>
+            <a href="">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 esp">
+        <div class="caixa">
+
+            <img src="{% static 'imagem/igreja.jpg' %}" class="imgtxt">
+            <h2>Santuário Nossa Senhora do Perpétuo Socorro</h2>
+
+            <div class="caixadescricao">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aspernatur, autem eligendi eveniet
+                    ex fugiat hic iure natus nemo non obcaecati quasi quibusdam, sapiente sequi temporibus voluptate.
+                    Dolor, similique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque delectus, dicta, enim
+                    excepturi fuga laborum laudantium maiores molestias optio perspiciatis, quae quasi qui quisquam
+                    reiciendis rem reprehenderit velit voluptatibus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur deserunt, dignissimos
+                    fuga fugiat iure iusto laboriosam, magni modi molestiae necessitatibus, nemo nisi non pariatur porro
+                    repudiandae sed sint tenetur!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt expedita mollitia obcaecati odio
+                    officiis ratione repellendus ullam. Adipisci dicta et quisquam similique voluptatem! Dolore
+                    exercitationem iste nisi officia recusandae suscipit.</p>
+            </div>
+            <div id="googleMap" class="mapa caixamapa"></div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 esp">
+        <div class="caixa">
+
+            <img src="{% static 'imagem/buffet.jpg' %}" class="imgtxt">
+            <h2>Romeu e Julieta Buffet</h2>
+
+            <div class="caixadescricao">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aspernatur, autem eligendi eveniet
+                    ex fugiat hic iure natus nemo non obcaecati quasi quibusdam, sapiente sequi temporibus voluptate.
+                    Dolor, similique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque delectus, dicta, enim
+                    excepturi fuga laborum laudantium maiores molestias optio perspiciatis, quae quasi qui quisquam
+                    reiciendis rem reprehenderit velit voluptatibus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur deserunt, dignissimos
+                    fuga fugiat iure iusto laboriosam, magni modi molestiae necessitatibus, nemo nisi non pariatur porro
+                    repudiandae sed sint tenetur!.</p>
+            </div>
+            <div id="BuffetMap" class="mapa caixamapa"></div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+</body>
+</html>

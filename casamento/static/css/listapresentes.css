@@ -61,51 +61,53 @@ ul{
     background: #FFC0CB;
     color: #FFFFFF;
 }
-.coracao{
-    text-align: center;
-}
-.colunat{
-    padding: 0px 10px;
-    margin: 25px 0px;
-}
+
 .caixa{
     background: #FFFFFF;
     box-shadow: 2px 2px 2px #888888;
-    align-text: center;
+    text-align: center;
     min-height: 550px;
     padding: 5px 15px;
     border: 0px solid;
     border-radius: 5px;
+    overflow: auto;
 }
-h2{
-    margin: 10px 0px;
+
+.imgtxt{
+    width: 30%;
+    overflow: auto;
+    float: left;
+    margin:10px 0px 0px 0px;
+    box-shadow: 2px 2px 2px #888888;
+    border: 1px solid;
+    border-radius: 25px;
+}
+
+.nomepresente{
     color: #FFC0CB;
-    font-family: 'Lobster';
-    font-size: 45px;
+    font-size: 25px;
     font-weight: normal;
 }
 
-.datacasa{
-    padding: 50px 0px 0px 0px;
-    text-align: center;
-    color: #FFC0CB;
-    font-size: 80px;
-    font-family: 'Lobster';
+.descricao{
+    font-size: 10px;
+    font-weight: normal;
+    text-indent: 50px;
+    text-align: justify;
+    padding: 0px 50px;
+}
+.caixapresente{
+    overflow: auto;
+    margin: 0px 0px 15px 0px;
 }
 
-.caidata{
-     padding: 50px 0px 0px 0px;
-    text-align: center;
-    color: #FFC0CB;
-    font-size: 50px;
-    font-family: 'Lobster';
+.textos{
+    float: right;
+    padding: 10px;
+    width: 70%;
+    overflow: auto;
+    text-align: center
 }
-
-.dias{
-    font-size:80px;
+.link{
+    font-size: 30px;
 }
-
-
-
-
-
