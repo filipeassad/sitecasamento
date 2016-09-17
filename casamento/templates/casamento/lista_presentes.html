@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{% static 'css/listapresentes.css' %}">
+    <link rel="icon" href="{% static 'imagem/aliancaico.png' %}">
 </head>
 <body>
 <div class="row">
@@ -30,7 +31,7 @@
             <a href="{% url 'casamento.views.local_casamento'%}">
                 <li>Local</li>
             </a>
-            <a href="{% url 'casamento.views.listapresentes'%}">
+            <a href="{% url 'casamento.views.linkpresente'%}">
                 <li>Lista Presentes</li>
             </a>
             <a href="{% url 'casamento.views.presenca'%}">
@@ -52,15 +53,37 @@
     <div class="col-md-1"></div>
     <div class="col-md-10 caixa">
         {% for pre in presentes %}
-        <div class="caixapresente">
-            <img src="{{pre.img.url}}" class="imgtxt" >
-            <div class="textos">
-                <p class="nomepresente">{{pre.nome}}</p>
-                <p class="descricao">{{pre.descricao}}</p>
-                <a href="{{pre.link}}" class="link" >Onde comprar?</a>
+            <div class="caixapresente">
+                {% if pre.comprado %}
+                    <div class="textocomprado">Comprado</div>
+                    <img src="{{pre.img.url}}" class="imgtxtcomprado" >
+                {% else %}
+                    <img src="{{pre.img.url}}" class="imgtxt" >
+                {% endif %}
+                <div class="textos">
+                    <p class="nomepresente">{{pre.nome}}</p>
+                    <p class="descricao">{{pre.descricao}}</p>
+                    {% if pre.comprado == False %}
+                        <a href="{{pre.link}}" class="link" >Onde comprar?</a>
+                    {% endif %}
+                </div>
             </div>
-        </div>
         {% endfor %}
+
+
+        {% if presentes.has_previous %}
+            <a href="?page={{ presentes.previous_page_number }}">anterior</a> |
+        {% endif %}
+
+
+        {% for pagenumber in presentes.paginator.page_range %}
+                <a href="?page={{ pagenumber }}">{{ pagenumber }}</a> |
+        {% endfor %}
+
+        {% if presentes.has_next %}
+                <a href="?page={{ presentes.next_page_number }}">próxima</a>
+        {% endif %}
+
     </div>
     <div class="col-md-1"></div>
 

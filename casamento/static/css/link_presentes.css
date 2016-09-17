@@ -71,59 +71,37 @@ ul{
     border: 0px solid;
     border-radius: 5px;
     overflow: auto;
+    margin: 0px 0px 30px 0px;
 }
 
-.mapa{
-    margin: 10px 0px;
-    width: 100%;
-    height: 500px;
-    box-shadow: 1px 1px 1px #888888;
-    display: inline-block;
-}
-
-.esp{
-    margin: 20px 0px 0px 0px;
-    padding: 0px;
-}
-.imgtxt{
-    width: 90%;
-    box-shadow: 2px 2px 2px #888888;
-    border: 0px solid;
-    border-radius: 25px;
-    margin: 30px 0px 0px 0px;
-}
-
-.caixadescricao{
-    float: left;
-    padding: 10px;
-    width: 50%;
-    overflow: auto;
-    text-align: center
-}
-
-.caixamapa{
-
-    float: right;
-    padding: 10px;
-    height: 400px;
-    width: 50%;
-    overflow: auto;
-    text-align: center;
-
-}
-
-h2{
+.texto{
     text-align: center;
     color: #FFC0CB;
     font-family: 'Lobster';
-    font-size: 50px;
-    text-shadow: 1px 1px 1px #888888;
+    font-size: 60px;
+    margin: 50px 0px 0px 0px;
 }
 
-p{
-    text-indent: 50px;
-    text-align: justify;
-    padding: 0px 50px;
+.linklista{
+    border: 1px solid;
+    border-radius: 5px;
+    background: #FFC0CB;
+    font-size: 48px;
+    color: #FFFFFF;
+    width: 300px;
+    font-family: 'Lobster';
+    margin: 0 auto;
+    padding: 5px;
+}
+
+linklista:hover {
+    background-color: white;
+    color: #FFC0CB;
+}
+
+.linklis{
+    margin: 35px 0px 0px 0px;
+    width: 300px;
 }
 
 a:link {

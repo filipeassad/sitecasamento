@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/contato.css' %}">
+    <link rel="icon" href="{% static 'imagem/aliancaico.png' %}"></head>
+<body>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 titulo">
+            <h1>Contato</h1>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row linhah1">
+        <div class="col-md-12"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 menutopo">
+            <ul>
+                <a href="{% url 'casamento.views.tela_inicial'%}">
+                    <li>Tela Inicial</li>
+                </a>
+                <a href="{% url 'casamento.views.local_casamento'%}">
+                    <li>Local</li>
+                </a>
+                <a href="{% url 'casamento.views.linkpresente'%}">
+                    <li>Lista Presentes</li>
+                </a>
+                <a href="{% url 'casamento.views.presenca'%}">
+                    <li>Cofirmação de Presença</li>
+                </a>
+                <!--<a href="">
+                    <li>Blog</li>
+                </a>-->
+                <a href="{% url 'casamento.views.contato'%}">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+     <div class="row">
+         <div class="col-md-1"></div>
+         <div class="col-md-10 caixa">
+
+             <div class="caixapessoa">
+                 <img class="imgpessoa" src="{% static 'imagem/filipe.jpg' %}">
+                 <div class="linha">
+                     <div class="textodados">Noivo</div>
+                     <div class="textodados">Filipe Assad Baraúna</div>
+                     <div class="textodados">(67) 99643-2316</div>
+                     <a href="https://www.facebook.com/filipe.assad" ><img class="imgface" src="{% static 'imagem/facebook.png' %}"></a>
+
+                 </div>
+             </div>
+
+             <div class="caixapessoa">
+                 <img class="imgpessoa" src="{% static 'imagem/mayara.jpg' %}">
+                 <div class="linha">
+                     <div class="textodados">Noiva</div>
+                     <div class="textodados">Mayara Cardoso Beneti</div>
+                     <div class="textodados">(67) 99922-0094</div>
+                     <a href="https://www.facebook.com/mayara.beneti.7"><img class="imgface" src="{% static 'imagem/facebook.png' %}"></a>
+                 </div>
+             </div>
+
+             <div class="caixapessoa">
+                 <img class="imgpessoa" src="{% static 'imagem/paifilipe.jpg' %}">
+                 <div class="linha">
+                     <div class="textodados">Pai do noivo</div>
+                     <div class="textodados">Wanderleiy Matos Baraúna</div>
+                     <div class="textodados">(67) 99623-0355</div>
+                 </div>
+             </div>
+
+             <div class="caixapessoa">
+                 <img class="imgpessoa" src="{% static 'imagem/paimay.jpg' %}">
+                 <div class="linha">
+                     <div class="textodados">Pai da noiva</div>
+                     <div class="textodados">Fernando Luis Beneti</div>
+                     <div class="textodados">(67) 99995-6254</div>
+                     <a href="https://www.facebook.com/fernando.beneti.3"><img class="imgface" src="{% static 'imagem/facebook.png' %}"></a>
+                 </div>
+             </div>
+
+             <div class="caixapessoa">
+                 <img class="imgpessoa" src="{% static 'imagem/maefilipe.jpg' %}">
+                 <div class="linha">
+                     <div class="textodados">Mãe do noivo</div>
+                     <div class="textodados">Valéria Silva Assad Baraúna</div>
+                     <div class="textodados">(67) 99646-1390</div>
+                     <a href="https://www.facebook.com/valeria.assadbarauna"><img class="imgface" src="{% static 'imagem/facebook.png' %}"></a>
+                 </div>
+             </div>
+
+             <div class="caixapessoa">
+                 <img class="imgpessoa ultimo" src="{% static 'imagem/marivalda.jpg' %}">
+                 <div class="linha">
+                     <div class="textodados">Mãe da noiva</div>
+                     <div class="textodados">Marivalda Pissurno Cardoso Beneti</div>
+                     <div class="textodados">(67) 99672-6620</div>
+                 </div>
+             </div>
+
+         </div>
+         <div class="col-md-1"></div>
+     </div>
+</body>
+</html>

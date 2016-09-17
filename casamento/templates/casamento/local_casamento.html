@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{% static 'css/local.css' %}">
+    <link rel="icon" href="{% static 'imagem/aliancaico.png' %}">
 
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -45,11 +46,9 @@
 </head>
 <body>
 <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8 titulo">
+    <div class="col-md-12 titulo">
         <h1>Local do Casamento</h1>
     </div>
-    <div class="col-md-2"></div>
 </div>
 <div class="row linhah1">
     <div class="col-md-12"></div>
@@ -64,16 +63,16 @@
             <a href="{% url 'casamento.views.local_casamento'%}">
                 <li>Local</li>
             </a>
-            <a href="{% url 'casamento.views.listapresentes'%}">
+            <a href="{% url 'casamento.views.linkpresente'%}">
                 <li>Lista Presentes</li>
             </a>
             <a href="{% url 'casamento.views.presenca'%}">
                 <li>Cofirmação de Presença</li>
             </a>
-            <a href="">
+            <!--<a href="">
                 <li>Blog</li>
-            </a>
-            <a href="">
+            </a>-->
+            <a href="{% url 'casamento.views.contato'%}">
                 <li>Contato</li>
             </a>
         </ul>
@@ -90,18 +89,10 @@
             <h2>Santuário Nossa Senhora do Perpétuo Socorro</h2>
 
             <div class="caixadescricao">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aspernatur, autem eligendi eveniet
-                    ex fugiat hic iure natus nemo non obcaecati quasi quibusdam, sapiente sequi temporibus voluptate.
-                    Dolor, similique.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque delectus, dicta, enim
-                    excepturi fuga laborum laudantium maiores molestias optio perspiciatis, quae quasi qui quisquam
-                    reiciendis rem reprehenderit velit voluptatibus.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur deserunt, dignissimos
-                    fuga fugiat iure iusto laboriosam, magni modi molestiae necessitatibus, nemo nisi non pariatur porro
-                    repudiandae sed sint tenetur!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt expedita mollitia obcaecati odio
-                    officiis ratione repellendus ullam. Adipisci dicta et quisquam similique voluptatem! Dolore
-                    exercitationem iste nisi officia recusandae suscipit.</p>
+                <p>A cerimônia do casamento será realizada na igreja Nossa Senhora do Perpétuo Socorro que fica localizada na Aveninda Afonso Pena número 377 no Centro de Campo Grande.
+                O casamento irá acontecer as 20h00 horas do dia onze de outubro.</p>
+                <p>A Paróquia de Nossa Senhora do Perpetuo Socorro foi fundada em 1939, pelo então Bispo de Corumbá, Dom Vicente Priante, no promissor Bairro Amambaí, cujo traçado, elaborado por engenheiros militares, acompanha as linhas sinuosas da ferrovia.
+                No dia 10 de janeiro de 1999, o então Arcebispo de Campo Grande, Dom Vitorio Pavanello, publicou o decreto de ereção da Igreja a Santuário Nossa Senhora do Perpetuo Socorro, motivado pelas tradicionais novenas que acontecem todas as quartas-feiras e reúnem milhares de pessoas. Atualmente, todas as quartas-feiras acontecem 18 novenas: das 06h00 as 23h00, ininterruptamente.</p>
             </div>
             <div id="googleMap" class="mapa caixamapa"></div>
         </div>
@@ -118,15 +109,9 @@
             <h2>Romeu e Julieta Buffet</h2>
 
             <div class="caixadescricao">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aspernatur, autem eligendi eveniet
-                    ex fugiat hic iure natus nemo non obcaecati quasi quibusdam, sapiente sequi temporibus voluptate.
-                    Dolor, similique.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque delectus, dicta, enim
-                    excepturi fuga laborum laudantium maiores molestias optio perspiciatis, quae quasi qui quisquam
-                    reiciendis rem reprehenderit velit voluptatibus.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur deserunt, dignissimos
-                    fuga fugiat iure iusto laboriosam, magni modi molestiae necessitatibus, nemo nisi non pariatur porro
-                    repudiandae sed sint tenetur!.</p>
+                <p>A festa será realizada logo em seguida da cerimônia no Romeu e Julieta Buffet que fica localizado na rua 26 de Agosto número 2335 no Jardim Amambaí.</p>
+                <p>Fundado em 2003, o Buffet Romeu & Julieta realiza os mais diversos tipos de eventos, não importando a distância ou a dimensão do acontecimento.
+                    O buffet conta com uma equipe formada por profissionais da mais alta competência e uma grande variedade de cardápios. A principal preocupação do Buffet Romeu & Julieta é proporcionar o máximo de satisfação aos seus clientes e convidados. Possui 02 locais: 01 salão social com capacidade para até 350 convidados, outro com capacidade de 50 a 120 pessoas.</p>
             </div>
             <div id="BuffetMap" class="mapa caixamapa"></div>
         </div>

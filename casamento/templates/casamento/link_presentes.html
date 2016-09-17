@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Lista de Presentes</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/link_presentes.css' %}">
+    <link rel="icon" href="{% static 'imagem/aliancaico.png' %}">
+
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 titulo">
+            <h1>Lista de Presentes</h1>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row linhah1">
+        <div class="col-md-12"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 menutopo">
+            <ul>
+                <a href="{% url 'casamento.views.tela_inicial'%}">
+                    <li>Tela Inicial</li>
+                </a>
+                <a href="{% url 'casamento.views.local_casamento'%}">
+                    <li>Local</li>
+                </a>
+                <a href="{% url 'casamento.views.linkpresente'%}">
+                    <li>Lista Presentes</li>
+                </a>
+                <a href="{% url 'casamento.views.presenca'%}">
+                    <li>Cofirmação de Presença</li>
+                </a>
+                <!--<a href="">
+                    <li>Blog</li>
+                </a>-->
+                <a href="{% url 'casamento.views.contato'%}">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 caixa">
+            <div class="texto" >Nossa lista de presentes está no link abaixo !</div>
+            <a class="linklis" href="https://www.querodecasamento.com.br/lista-de-casamento/filipeemay/?guest_utm=search">
+                <div class="linklista">Magazineluiza</div>
+            </a>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</body>
+</html>

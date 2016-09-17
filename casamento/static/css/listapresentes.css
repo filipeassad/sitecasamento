@@ -71,6 +71,21 @@ ul{
     border: 0px solid;
     border-radius: 5px;
     overflow: auto;
+    margin: 0px 0px 30px 0px;
+}
+
+.textocomprado{
+    position: relative;
+    overflow: auto;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    margin: 40px 0px 0px 0px;
+    font-family: 'Lobster';
+    color: #fba4b3;
+    text-shadow: 1px 1px 1px #888888;
+    font-size: 50px;
+    transform: rotate(-35deg);
 }
 
 .imgtxt{
@@ -81,6 +96,18 @@ ul{
     box-shadow: 2px 2px 2px #888888;
     border: 1px solid;
     border-radius: 25px;
+}
+
+.imgtxtcomprado{
+    width: 30%;
+    overflow: auto;
+    float: left;
+    margin:10px 0px 0px 0px;
+    box-shadow: 2px 2px 2px #888888;
+    border: 1px solid;
+    border-radius: 25px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 .nomepresente{

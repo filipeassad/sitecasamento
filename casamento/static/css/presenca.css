@@ -62,12 +62,6 @@ ul{
     color: #FFFFFF;
 }
 
-span{
-    font-family: "Lobster", Georgia, Serif;
-    font-size: 40px;
-    color: #FFC0CB;
-}
-
 input[type=text] {
     border: none;
     font-size: 40px;
@@ -105,7 +99,7 @@ label{
     margin: 15px 0px 0px 0px;
 }
 .inputcaixa{
-    margin: 60px 0px 0px 0px;
+    margin: 80px 0px 0px 0px;
 }
 
 button {
@@ -122,4 +116,65 @@ button {
 button:hover {
     background-color: #FFC0CB;
     color: white;
+}
+
+.lbconvidados{
+    font-family: "Lobster", Georgia, Serif;
+    font-size: 40px;
+    color: #FFC0CB;
+}
+
+#numero{
+    width: 60px;
+    text-align: center;
+    min-height: 50px;
+    font-family: "Lobster", Georgia, Serif;
+    border: none;
+    font-size: 40px;
+    border: 1px solid #FFC0CB;
+    margin: 10px 0px 0px 0px;
+    color: #FFC0CB;
+}
+
+#presenca{
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    padding: 10px;
+    margin: 0px 15px 0px 0px;
+}
+
+.textoradio{
+    font-family: "Lobster", Georgia, Serif;
+    font-size: 40px;
+    color: #FFC0CB;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+span{
+    font-family: "Lobster", Georgia, Serif;
+    font-size: 40px;
+    color: #FFC0CB;
+}
+
+.caixaradio{
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }

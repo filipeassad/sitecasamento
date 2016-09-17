@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/telainical.css' %}">
+        <link rel="icon" href="{% static 'imagem/aliancaico.png' %}">
 
         <script type="text/javascript" src="{% static 'scripts/moment.js' %}"></script>
         <script type="text/javascript">
@@ -40,10 +41,10 @@
                 <ul>
                     <a href="{% url 'casamento.views.tela_inicial'%}"><li>Tela Inicial</li></a>
                     <a href="{% url 'casamento.views.local_casamento'%}"><li>Local</li></a>
-                    <a href="{% url 'casamento.views.listapresentes'%}"><li>Lista Presentes</li></a>
+                    <a href="{% url 'casamento.views.linkpresente'%}"><li>Lista Presentes</li></a>
                     <a href="{% url 'casamento.views.presenca'%}"><li>Cofirmação de Presença</li></a>
-                    <a href=""><li>Blog</li></a>
-                    <a href=""><li>Contato</li></a>
+                    <!--<a href=""><li>Blog</li></a>-->
+                    <a href="{% url 'casamento.views.contato'%}"><li>Contato</li></a>
                 </ul>
             </div>
             <div class="col-md-1"></div>
@@ -52,7 +53,7 @@
         <div class="row">
              <div class="col-md-2"></div>
             <div class="col-md-8 coracao">
-                <img src="{% static 'imagem/filipeemayara.png' %}">
+                <img class="imgprincipal" src="{% static 'imagem/osdois.png' %}">
             </div>
             <div class="col-md-2"></div>
         </div>

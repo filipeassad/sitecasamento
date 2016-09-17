@@ -65,65 +65,48 @@ ul{
 .caixa{
     background: #FFFFFF;
     box-shadow: 2px 2px 2px #888888;
-    text-align: center;
     min-height: 550px;
     padding: 5px 15px;
     border: 0px solid;
     border-radius: 5px;
     overflow: auto;
+    margin: 0px 0px 20px 0px;
+
+}
+.caixapessoa{
+    overflow: auto;
+    width: 540px;
+    display: table;
+    margin: 10px 0px 0px 10px;
 }
 
-.mapa{
-    margin: 10px 0px;
-    width: 100%;
-    height: 500px;
-    box-shadow: 1px 1px 1px #888888;
-    display: inline-block;
-}
-
-.esp{
-    margin: 20px 0px 0px 0px;
-    padding: 0px;
-}
-.imgtxt{
-    width: 90%;
-    box-shadow: 2px 2px 2px #888888;
+.imgpessoa{
     border: 0px solid;
-    border-radius: 25px;
-    margin: 30px 0px 0px 0px;
+    border-radius: 5px;
+    width: 250px;
 }
 
-.caixadescricao{
-    float: left;
-    padding: 10px;
-    width: 50%;
-    overflow: auto;
-    text-align: center
+.imgface{
+    border: 0px solid;
+    border-radius: 5px;
+    width: 40px;
+    margin: 10px 0px 0px 10px;
 }
 
-.caixamapa{
-
-    float: right;
-    padding: 10px;
-    height: 400px;
-    width: 50%;
-    overflow: auto;
-    text-align: center;
-
-}
-
-h2{
-    text-align: center;
+.textodados{
     color: #FFC0CB;
     font-family: 'Lobster';
-    font-size: 50px;
-    text-shadow: 1px 1px 1px #888888;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
 }
 
-p{
-    text-indent: 50px;
-    text-align: justify;
-    padding: 0px 50px;
+.linha{
+    display: table-cell;
+    width: 500px;
+}
+
+.ultimo{
+    margin: 0px 0px 10px 0px;
 }
 
 a:link {
