@@ -1,15 +1,16 @@
 body{
-    background: url("../imagem/fundo.jpg");
+    background: url("../imagem/bg.jpg");
 }
 
 .titulo{
     padding: 15px;
+    background: #FFC0CB;
 }
 
 h1{
     margin: 0px;
     text-align: center;
-    color: #FFC0CB;
+    color: #FFFFFF;
     font-family: 'Lobster';
     font-size: 100px;
     font-weight: normal;
@@ -85,7 +86,7 @@ label{
     background-color: white;
     border: 0px solid red;
     border-radius: 5px;
-    margin: 10px 0px 50px 0px;
+    margin: 0px 0px 50px 0px;
     min-height: 600px;
     box-shadow: 2px 2px 2px #888888;
 }

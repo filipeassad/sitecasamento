@@ -1,9 +1,9 @@
 body{
-    background: url("../imagem/fundo.jpg");
+    background: url("../imagem/bg.jpg");
 }
-
 .titulo{
     padding: 15px;
+    background: #FFC0CB;
 }
 
 p{
@@ -14,7 +14,7 @@ p{
 h1{
     margin: 0px;
     text-align: center;
-    color: #FFC0CB;
+    color: #FFFFFF;
     font-family: 'Lobster';
     font-size: 100px;
     font-weight: normal;

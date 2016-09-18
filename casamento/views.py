@@ -43,4 +43,7 @@ def postconfirmacao(request):
         convidado = Convidado.objects.create(nome=nome, presenca=presenca, npessoas=pessoas)
         convidado.publish()
 
-        return HttpResponseRedirect('/presenca')
+        return HttpResponseRedirect('/agradecimento')
+
+def agradecimento(request):
+    return render(request, 'casamento/agradecimento.html')

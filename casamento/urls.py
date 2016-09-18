@@ -7,4 +7,5 @@ urlpatterns = [ url(r'^$', views.tela_inicial),
                 url(r'^listapresentes', views.linkpresente),
                 url(r'^presenca', views.presenca),
                 url(r'^contato', views.contato),
-                url(r'^confirma/$', views.postconfirmacao),]
+                url(r'^confirma/$', views.postconfirmacao),
+                url(r'^agradecimento/$', views.agradecimento),]
